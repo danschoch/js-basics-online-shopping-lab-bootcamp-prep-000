@@ -10,7 +10,23 @@ function setCart(c) {
 }
 
 function addToCart(item) {
- // write your code here
+  function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+  
+  getRandomIntInclusive(1,100);
+  
+  for(var i=0, l = cart.length; i<l; i++) {
+    getRandomIntInclusive(1,100);
+  }
+  
+  var itemName = [item];
+  
+  cart.push({itemName: [item], price: [randomInt]});
+  
+  return `${itemName} has been added to your cart.`;
 }
 
 function viewCart() {

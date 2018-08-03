@@ -16,13 +16,7 @@ function addToCart(item) {
   var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
   }
   
-  var randomPrice
-  
   getRandomIntInclusive(1,100);
-  
-  for(var i=0, l = cart.length; i<l; i++) {
-    getRandomIntInclusive(1,100);
-  }
   
   var itemName = [item];
   

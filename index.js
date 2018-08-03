@@ -13,13 +13,14 @@ function addToCart(item) {
   function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  var randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
-  return randomInt;
+  return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+  
+  var randomPrice = getRandomIntInclusive(1,100);
   
   var itemName = [item];
   
-  cart.push({itemName: [item], price: [randomInt]});
+  cart.push({itemName: [item], price: [randomPrice]});
   
   return `${itemName} has been added to your cart.`;
 }

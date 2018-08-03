@@ -17,6 +17,7 @@ function addToCart(item) {
   }
   
   getRandomIntInclusive(1,100);
+  console.log (randomInt);
   
   var itemName = [item];
   

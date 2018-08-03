@@ -19,9 +19,6 @@ var randomPrice = getRandomIntInclusive(1,100);
 console.log(randomPrice);
 
 function addToCart(item) {
-  
-  var randomPrice = getRandomIntInclusive(1,100);
-  
   var itemName = [item];
   
   cart.push({itemName: [item], price: [randomPrice]});

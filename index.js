@@ -15,7 +15,7 @@ function getRandomIntInclusive(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   
-var randomPrice = getRandomIntInclusive(1,100);
+var randomPrice = parseInt(getRandomIntInclusive(1,100));
 console.log(randomPrice);
 
 function addToCart(item) {
